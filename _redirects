@@ -1,0 +1,62 @@
+# Netlify / Cloudflare Pages — only used if Drop Zone signs and the site migrates off Webador.
+#
+# ⚠️ BEFORE PROMISING A MIGRATION DATE: confirm what Webador can export, and whether URL-level redirects
+#    are possible on their current plan. [WEBADOR EXPORT + REDIRECT CAPABILITY — CONFIRM]
+#
+# ~23 real paths exist. Only ONE old path is verified character-for-character:
+#    /groups-parties-walk-on/cooperate-team-building
+# Every other "old path" below is inferred from their nav labels and MUST be checked against a crawl.
+# [REDIRECT MAP — CRAWL dropzonepaintballpark.com AND CONFIRM EVERY SLUG, SIGN-OFF (PRE-LAUNCH L17)]
+
+# --- The one structural change: misspelled slug → corrected page (301, permanent) ---
+/groups-parties-walk-on/cooperate-team-building    /corporate-team-building    301!
+/groups-parties-walk-on/cooperate-team-building/   /corporate-team-building    301!
+
+# --- Groups / Parties / Walk-On (old paths inferred — confirm) ---
+/groups-parties-walk-on                       /groups-parties              301
+/groups-parties-walk-on/birthday-parties      /birthday-parties            301
+/groups-parties-walk-on/bachelor-parties      /bachelor-parties            301
+/groups-parties-walk-on/school-events         /school-events               301
+/groups-parties-walk-on/walk-on-players       /walk-on-players             301
+/groups-parties-walk-on/private-groups        /private-groups              301
+
+# --- About Our Park (old paths inferred — confirm) ---
+/about-our-park                               /our-park                    301
+/about-our-park/our-courses                   /our-courses                 301
+/about-our-park/low-impact-paintball          /low-impact                  301
+/about-our-park/faq                           /faq                         301
+
+# --- Pricing (old paths inferred — confirm) ---
+/pricing/refund-policy                        /refund-policy               301
+/pricing/free-pass                            /free-pass                   301
+
+# --- Registration / events (old paths inferred — confirm) ---
+/registration/group-registration              /group-registration          301
+/special-events                               /events                      301
+
+# --- Paths kept identical (pretty URL → file) ---
+/corporate-team-building     /corporate-team-building.html   200
+/groups-parties              /groups-parties.html            200
+/birthday-parties            /birthday-parties.html          200
+/bachelor-parties            /bachelor-parties.html          200
+/school-events               /school-events.html             200
+/walk-on-players             /walk-on-players.html           200
+/private-groups              /private-groups.html            200
+/our-park                    /our-park.html                  200
+/our-courses                 /our-courses.html               200
+/low-impact                  /low-impact.html                200
+/faq                         /faq.html                       200
+/pricing                     /pricing.html                   200
+/refund-policy               /refund-policy.html             200
+/free-pass                   /free-pass.html                 200
+/gift-certificates           /gift-certificates.html         200
+/maps-directions             /maps-directions.html           200
+/waivers                     /waivers.html                   200
+/registration                /registration.html              200
+/group-registration          /group-registration.html        200
+/events                      /events.html                    200
+/events-archive              /events-archive.html            200
+/airsoft-at-dz               /airsoft-at-dz.html             200
+/contact                     /contact.html                   200
+/privacy                     /privacy.html                   200
+/terms                       /terms.html                     200
